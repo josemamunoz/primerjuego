@@ -1,22 +1,12 @@
-// let total = prompt("Cuantas personas asistiran a la boda?");
-
-// let a = 5;
-// let b = 6;
-// let c = 3;
-
-// if (a > b  && a > c)
-
-// let numeroMayor = (a > b && a > c ) ? "A" : (b > c) ? "B" : (c > a) ? "C";
-
-let seleccion = ["piedra", "papel", "tijeras", "lagarto", "spok","piedra", "papel", "tijeras", "lagarto", "spok", "piedra"];
+let seleccion = ["piedra", "papel", "tijeras", "lagarto", "spok"];
 let usuario = prompt("Elige: piedra, papel, tijeras, lagarto o spok");
-let computador = seleccion[(Math.floor(Math.random()*10))]
-// console.log(seleccion[(Math.floor(Math.random()*10))])
+let numero = Math.floor(Math.random()*Selection.length)
+let computador = seleccion[numero]
 
 if ( usuario == "tijeras" && computador == "papel"){
   console.log("tijeras cortan papel: gana usuario");
 } else if ( usuario == "papel" && computador == "tijeras"){
-    console.log("tijeras cortan papel: gana ususario");   
+    console.log("tijeras cortan papel: pierdes");   
 } else if(usuario == "papel" && computador == "piedra"){
     console.log("papel tapa a piedra: gana usuario");
 } else if(usuario == "piedra" && computador == "papel"){
